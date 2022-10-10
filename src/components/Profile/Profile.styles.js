@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Wrap = styled.div`
   width: 200px;
-  padding: 10px;
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -50,10 +49,11 @@ export const StatsList = styled.ul`
 
 export const StatsItem = styled.li`
   align-items: center;
-  background-color: grey;
+  background-color: rgb(120, 120, 120);
   display: flex;
+  padding: 10px 0;
   flex-direction: column;
-  width: calc(100% / 3px);
+  width: calc(100% / 3);
   border: 1px solid blue;
 `;
 

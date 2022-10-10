@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const StatisticsSection = styled.section`
-  padding-top: 100px;
+  padding-top: 10px;
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   width: 400px;
