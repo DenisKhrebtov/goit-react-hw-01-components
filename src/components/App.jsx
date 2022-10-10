@@ -8,9 +8,9 @@ import data from '../data.json';
 
 export const App = () => {
   return (
-    <>
+    <div className="main-container">
       <Profile user={user} />
       <Statistics data={data} />
-    </>
+    </div>
   );
 };

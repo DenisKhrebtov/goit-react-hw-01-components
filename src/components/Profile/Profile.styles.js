@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.div`
-  width: 150px;
+  width: 200px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   border: 2px solid black;
@@ -44,23 +45,26 @@ export const StatsList = styled.ul`
   justify-content: center;
   display: flex;
   list-style: none;
-`;
-
-export const StatsItem = styled.li`
-  background-color: grey;
-  display: flex;
-  flex-direction: column;
-  width: calc(100% - 3px);
-  border: 1px solid blue;
   width: 100%;
 `;
 
+export const StatsItem = styled.li`
+  align-items: center;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  width: calc(100% / 3px);
+  border: 1px solid blue;
+`;
+
 export const Label = styled.span`
+  align-items: center;
+  text-align: center;
   font-size: 12px;
-  font-weight: 500;
+  font-weight: 400;
 `;
 
 export const Quantity = styled.span`
-  font-size: 15px;
-  font-weight: 700;
+  font-size: 13px;
+  font-weight: 500;
 `;

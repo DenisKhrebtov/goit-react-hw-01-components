@@ -1,9 +1,11 @@
 import styled from 'styled-components';
 
 export const StatisticsSection = styled.section`
+  padding-top: 100px;
   display: flex;
   flex-direction: column;
   width: 400px;
+  border: 1px solid black;
 `;
 export const StatisticsList = styled.ul`
   display: flex;
@@ -15,13 +17,19 @@ export const StatisticsItem = styled.li`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 1px solid black;
+  &:not(:last-child) {
+    border-right: 1px solid black;
+  }
 `;
 
 export const StatisticsTitle = styled.h2`
+  align-items: center;
   font-size: 20px;
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
+  border-bottom: 1px solid black;
 `;
 export const StatisticsLabel = styled.span`
   font-size: 20px;

@@ -3,6 +3,7 @@ import { Title } from './StatisticsTitle';
 import {
   StatisticsSection,
   StatisticsList,
+  StatisticsTitle,
   StatisticsItem,
   StatisticsLabel,
   StatisticsPercentage,
@@ -11,16 +12,16 @@ import {
 export const Statistics = ({ data, title }) => {
   return (
     <StatisticsSection>
-      <h2 class="title">Upload stats</h2>
-      {title && <Title title={title} />}
-      {data.map(({ id, label, percentage }) => (
-        <StatisticsList>
+      <StatisticsTitle> Upload stats </StatisticsTitle>
+      <StatisticsList>
+        {title && <Title title={title} />}
+        {data.map(({ id, label, percentage }) => (
           <StatisticsItem key={id}>
             <StatisticsLabel>{label}</StatisticsLabel>
             <StatisticsPercentage>{percentage}%</StatisticsPercentage>
           </StatisticsItem>
-        </StatisticsList>
-      ))}
+        ))}
+      </StatisticsList>
     </StatisticsSection>
   );
 };
@@ -30,7 +31,7 @@ Statistics.propTypes = {
     PropTypes.shape({
       id: PropTypes.string.isRequired,
       label: PropTypes.string.isRequired,
-      percentage: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
     })
   ),
   title: PropTypes.string,
