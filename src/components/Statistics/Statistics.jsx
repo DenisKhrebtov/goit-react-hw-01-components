@@ -3,7 +3,6 @@ import { Title } from './StatisticsTitle';
 import {
   StatisticsSection,
   StatisticsList,
-  StatisticsTitle,
   StatisticsItem,
   StatisticsLabel,
   StatisticsPercentage,
@@ -12,9 +11,8 @@ import {
 export const Statistics = ({ data, title }) => {
   return (
     <StatisticsSection>
-      <StatisticsTitle> Upload stats </StatisticsTitle>
+      {title && <Title title={title} />}
       <StatisticsList>
-        {title && <Title title={title} />}
         {data.map(({ id, label, percentage }) => (
           <StatisticsItem key={id}>
             <StatisticsLabel>{label}</StatisticsLabel>

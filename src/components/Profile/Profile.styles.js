@@ -1,6 +1,9 @@
 import styled from 'styled-components';
 
 export const Wrap = styled.div`
+  padding-top: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
   width: 200px;
   display: flex;
   flex-direction: column;
@@ -43,6 +46,7 @@ export const StatsList = styled.ul`
   align-items: center;
   justify-content: center;
   display: flex;
+
   list-style: none;
   width: 100%;
 `;
