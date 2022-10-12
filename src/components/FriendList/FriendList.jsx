@@ -1,10 +1,10 @@
 import { FriendList } from '../FriendList/FriendList.styles';
-import { OneFriend } from './FriendItem';
+import { FriendListItem } from './FriendListItem';
 
 export const Friend = ({ friends }) => {
   return (
     <FriendList>
-      <OneFriend friends={friends} />
+      <FriendListItem friends={friends} />
     </FriendList>
   );
 };

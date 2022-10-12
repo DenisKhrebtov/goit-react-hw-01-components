@@ -6,7 +6,7 @@ import {
   FriendStatus,
 } from './FriendList.styles';
 
-export const OneFriend = ({ friends }) => {
+export const FriendListItem = ({ friends }) => {
   return friends.map(({ avatar, name, isOnline, id }) => {
     return (
       <FriendItem key={id}>
@@ -18,7 +18,7 @@ export const OneFriend = ({ friends }) => {
   });
 };
 
-OneFriend.propTypes = {
+FriendListItem.propTypes = {
   friends: PropTypes.arrayOf(
     PropTypes.shape({
       avatar: PropTypes.string.isRequired,
